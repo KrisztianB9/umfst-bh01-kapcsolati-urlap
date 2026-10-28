@@ -82,7 +82,7 @@ W3C validator sulyos hibat jelez az utolso sorokban, tab billentyuvel navigalva 
 - **Gyökérok (melyik sor, melyik szabály sérül):**
 A 29. sorban a gomb egy anchor tagbe van csomagolva. Mivel mind az <a> es a <button> fokuszalhato elem, a bongeszo ket kulon Tab-megallot hoz letre.
 - **Javítás (commit link, előtte/utána kódrészlet):**
-
+  https://github.com/KrisztianB9/umfst-bh01-kapcsolati-urlap/commit/48d25d5a8c787cdd25683a55517fcc5677890e59
 Elotte: <a href="#"><button>Küldés</button></a>
 Utana: <button type="submit">Küldés</button>
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
@@ -92,10 +92,17 @@ Urlap bekuldesehez nincs szukseg <a> linkre, a <button> elem onmagaban elvegzi e
 
 ## 7. hiba
 - **Hiba leírása és reprodukálása (lépések, böngésző, segédtechnológia):**
+Billentyuzettel navigalva az urlapon nem lathato semmilyen vizualis visszajelzes, hogy eppen hol tartunk.
 - **Gyökérok (melyik sor, melyik szabály sérül):**
+A CSS kod 6. soraban az outline: none; letiltja az alapmeretezett bongeszos fokuszkeretet es nem ad helyette semmilyen alternativ vizualis jelzest.
 - **Javítás (commit link, előtte/utána kódrészlet):**
+
+Elotte: input:focus, select:focus, textarea:focus, button:focus { outline: none; }
+Utana: input:focus, select:focus, textarea:focus, button:focus { outline: 2px solid #0e7c66; outline-offset: 2px; }
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
+Lighthouse Accessibility audit, billentyuzetes bejaras.
 - **Tanulság / érintett alapelv (pl. Szemantika előbb, stílus később; WCAG-kritérium):**
+Sose tavolitsuk el az outline: none; beallitassal a fokuszkeretet, vagy adjunk meg helyette egy jol lathato fokuszbeallitast.
 
 ## Összegzés
 - Mit tanultam:
