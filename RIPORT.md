@@ -40,7 +40,7 @@ Reprodukalas: az oldal megnyitasa.
 - **Gyökérok (melyik sor, melyik szabály sérül):**
 a CSS kod 3. soraban a color attributum el van gepelve colour-ra, ezert nem ismeri fel.
 - **Javítás (commit link, előtte/utána kódrészlet):**
-
+  https://github.com/KrisztianB9/umfst-bh01-kapcsolati-urlap/commit/30de42a638b9663d02871a54ee0cda8859e89bc1
 Elotte: .cim { colour: #0e7c66; font-size: 2rem; }
 Utana: .cim { color: #0e7c66; font-size: 2rem; }
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
@@ -50,10 +50,16 @@ Szemantika es szintaxis pontossaga.
 
 ## 4. hiba
 - **Hiba leírása és reprodukálása (lépések, böngésző, segédtechnológia):**
+A kepernyoolvaso a beviteli mezokre lepve csak annyit mond: "szerkesztes, ures". Mivel csak placeholder van, ahogy elkezdunk gepelni, a kepernyoolvaso elnemul es a latasserult elveszti a kontextust.
+Reprodukalas: oldal megnyitasa es kepernyoolvasoval valo bejaras.
 - **Gyökérok (melyik sor, melyik szabály sérül):**
+Az urlapmezoknek (input,select,textarea) nincsen label cimke elemei. A fejleszto csak placeholder elemeket hasznalt.
 - **Javítás (commit link, előtte/utána kódrészlet):**
+
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
+Lighthouse Accessibilty audit, kepernyoolvasasos teszteles.
 - **Tanulság / érintett alapelv (pl. Szemantika előbb, stílus később; WCAG-kritérium):**
+A placeholder soha nem helyettesiti a label-t.
 
 ## 5. hiba
 - **Hiba leírása és reprodukálása (lépések, böngésző, segédtechnológia):**
