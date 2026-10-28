@@ -11,8 +11,6 @@ Reprodukalas: oldal megnyitasa bongeszoben bekapcsolt kepernyoolvasoval.
 A 2. sorban hianyzik a <html> nyito tagbol a nyelv meghatarozasa. 
 - **Javítás (commit link, előtte/utána kódrészlet):**
   https://github.com/KrisztianB9/umfst-bh01-kapcsolati-urlap/commit/84b403a35839c12d8382ecaa400cf1373535d29b
-Elotte: <html>
-Utana: <html lang="hu">
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
 Lighthouse Accessibility audit hibat ad vissza, illetve kepernyoolvasoval valo meghallgatas.
 - **Tanulság / érintett alapelv (pl. Szemantika előbb, stílus később; WCAG-kritérium):**
@@ -26,8 +24,6 @@ Reprodukalas: oldal bejarasa kepernyoolvasolval.
 A 11. sorban az <img> tagbol hianyzik az alt attributum.
 - **Javítás (commit link, előtte/utána kódrészlet):**
   https://github.com/KrisztianB9/umfst-bh01-kapcsolati-urlap/commit/e7cdf95522522cf2883156c1281218ccfc3f2074
-Elotte: <img src="logo.png" width="120" height="40">
-Utana: <img src="logo.png" width="120" height="40" alt="ÁOK Dékáni Hivatal logó">
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
 W3C validator, kepernyoolvaso teszt.
 - **Tanulság / érintett alapelv (pl. Szemantika előbb, stílus később; WCAG-kritérium):**
@@ -41,8 +37,6 @@ Reprodukalas: az oldal megnyitasa.
 a CSS kod 3. soraban a color attributum el van gepelve colour-ra, ezert nem ismeri fel.
 - **Javítás (commit link, előtte/utána kódrészlet):**
   https://github.com/KrisztianB9/umfst-bh01-kapcsolati-urlap/commit/30de42a638b9663d02871a54ee0cda8859e89bc1
-Elotte: .cim { colour: #0e7c66; font-size: 2rem; }
-Utana: .cim { color: #0e7c66; font-size: 2rem; }
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
 A DevTools Styles paneljenek ellenorzese, vizualis ellenorzes.
 - **Tanulság / érintett alapelv (pl. Szemantika előbb, stílus később; WCAG-kritérium):**
@@ -69,8 +63,6 @@ Reprodukalas: mobilon rakattintani a mezore, tesztadat beirasa.
 Az email cim bekeresere szolaglo <input> type-ja text-re van rakva, ami egy sima szoveges mezo.
 - **Javítás (commit link, előtte/utána kódrészlet):**
   https://github.com/KrisztianB9/umfst-bh01-kapcsolati-urlap/commit/cd60e4d3319e36a556f33f0316c1da8f5d975f83
-Elotte: <input type="text" id="email" name="email" placeholder="E-mail cím" required>
-Utana: <input type="email" id="email" name="email" placeholder="E-mail cím" required>
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
 Mobilos bongeszo es az urlap kitoltese @ nelkul. Hibat dob vissza nelkule.
 - **Tanulság / érintett alapelv (pl. Szemantika előbb, stílus később; WCAG-kritérium):**
@@ -83,8 +75,6 @@ W3C validator sulyos hibat jelez az utolso sorokban, tab billentyuvel navigalva 
 A 29. sorban a gomb egy anchor tagbe van csomagolva. Mivel mind az <a> es a <button> fokuszalhato elem, a bongeszo ket kulon Tab-megallot hoz letre.
 - **Javítás (commit link, előtte/utána kódrészlet):**
   https://github.com/KrisztianB9/umfst-bh01-kapcsolati-urlap/commit/48d25d5a8c787cdd25683a55517fcc5677890e59
-Elotte: <a href="#"><button>Küldés</button></a>
-Utana: <button type="submit">Küldés</button>
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
 W3C validator, es billentyuzetes bejaras.
 - **Tanulság / érintett alapelv (pl. Szemantika előbb, stílus később; WCAG-kritérium):**
@@ -97,8 +87,6 @@ Billentyuzettel navigalva az urlapon nem lathato semmilyen vizualis visszajelzes
 A CSS kod 6. soraban az outline: none; letiltja az alapmeretezett bongeszos fokuszkeretet es nem ad helyette semmilyen alternativ vizualis jelzest.
 - **Javítás (commit link, előtte/utána kódrészlet):**
   https://github.com/KrisztianB9/umfst-bh01-kapcsolati-urlap/commit/56d05918390bb8279343b670c5c51ff8c8bcdd5d
-Elotte: input:focus, select:focus, textarea:focus, button:focus { outline: none; }
-Utana: input:focus, select:focus, textarea:focus, button:focus { outline: 2px solid #0e7c66; outline-offset: 2px; }
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
 Lighthouse Accessibility audit, billentyuzetes bejaras.
 - **Tanulság / érintett alapelv (pl. Szemantika előbb, stílus később; WCAG-kritérium):**
