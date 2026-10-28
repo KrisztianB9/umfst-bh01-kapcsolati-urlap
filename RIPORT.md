@@ -25,7 +25,7 @@ Reprodukalas: oldal bejarasa kepernyoolvasolval.
 - **Gyökérok (melyik sor, melyik szabály sérül):**
 A 11. sorban az <img> tagbol hianyzik az alt attributum.
 - **Javítás (commit link, előtte/utána kódrészlet):**
-
+  https://github.com/KrisztianB9/umfst-bh01-kapcsolati-urlap/commit/e7cdf95522522cf2883156c1281218ccfc3f2074
 Elotte: <img src="logo.png" width="120" height="40">
 Utana: <img src="logo.png" width="120" height="40" alt="ÁOK Dékáni Hivatal logó">
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
@@ -35,10 +35,18 @@ Minden nem-szoveges tartalomnak rendelkeznie kell szoveges alternativaval, hogy 
 
 ## 3. hiba
 - **Hiba leírása és reprodukálása (lépések, böngésző, segédtechnológia):**
+A <h1> elem szovege fekete szinu marad, pedig a CSS-ben beallitottuk zoldre.
+Reprodukalas: az oldal megnyitasa.
 - **Gyökérok (melyik sor, melyik szabály sérül):**
+a CSS kod 3. soraban a color attributum el van gepelve colour-ra, ezert nem ismeri fel.
 - **Javítás (commit link, előtte/utána kódrészlet):**
+
+Elotte: .cim { colour: #0e7c66; font-size: 2rem; }
+Utana: .cim { color: #0e7c66; font-size: 2rem; }
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
+A DevTools Styles paneljenek ellenorzese, vizualis ellenorzes.
 - **Tanulság / érintett alapelv (pl. Szemantika előbb, stílus később; WCAG-kritérium):**
+Szemantika es szintaxis pontossaga.
 
 ## 4. hiba
 - **Hiba leírása és reprodukálása (lépések, böngésző, segédtechnológia):**
