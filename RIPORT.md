@@ -96,7 +96,7 @@ Billentyuzettel navigalva az urlapon nem lathato semmilyen vizualis visszajelzes
 - **Gyökérok (melyik sor, melyik szabály sérül):**
 A CSS kod 6. soraban az outline: none; letiltja az alapmeretezett bongeszos fokuszkeretet es nem ad helyette semmilyen alternativ vizualis jelzest.
 - **Javítás (commit link, előtte/utána kódrészlet):**
-
+  https://github.com/KrisztianB9/umfst-bh01-kapcsolati-urlap/commit/56d05918390bb8279343b670c5c51ff8c8bcdd5d
 Elotte: input:focus, select:focus, textarea:focus, button:focus { outline: none; }
 Utana: input:focus, select:focus, textarea:focus, button:focus { outline: 2px solid #0e7c66; outline-offset: 2px; }
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
@@ -105,5 +105,5 @@ Lighthouse Accessibility audit, billentyuzetes bejaras.
 Sose tavolitsuk el az outline: none; beallitassal a fokuszkeretet, vagy adjunk meg helyette egy jol lathato fokuszbeallitast.
 
 ## Összegzés
-- Mit tanultam:
-- Melyik alapelv sérült a leggyakrabban:
+- Mit tanultam: Az accessibility nem csupan egy extra kenyelmi funkcio, hanem a helyes HTML szemantika es CSS alapveto kovetelmenye. A vizualis visszajelzesek, a beviteli mezok pontos azonositasa elengedhetetlen a kisegito technologiak es a billentyuzetes hasznalat szamara.
+- Melyik alapelv sérült a leggyakrabban: A vizualis es kisegito visszajelzesek elhagyasa (hianyzo lang, alt, label elemek, illetve letiltott "outline").
