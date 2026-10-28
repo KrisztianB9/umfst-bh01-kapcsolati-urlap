@@ -68,7 +68,7 @@ Reprodukalas: mobilon rakattintani a mezore, tesztadat beirasa.
 - **Gyökérok (melyik sor, melyik szabály sérül):**
 Az email cim bekeresere szolaglo <input> type-ja text-re van rakva, ami egy sima szoveges mezo.
 - **Javítás (commit link, előtte/utána kódrészlet):**
-
+  https://github.com/KrisztianB9/umfst-bh01-kapcsolati-urlap/commit/cd60e4d3319e36a556f33f0316c1da8f5d975f83
 Elotte: <input type="text" id="email" name="email" placeholder="E-mail cím" required>
 Utana: <input type="email" id="email" name="email" placeholder="E-mail cím" required>
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
@@ -78,10 +78,17 @@ A megfelelo szemantikus input tipus hasznalata drasztikusan noveli a mobilelmeny
 
 ## 6. hiba
 - **Hiba leírása és reprodukálása (lépések, böngésző, segédtechnológia):**
+W3C validator sulyos hibat jelez az utolso sorokban, tab billentyuvel navigalva ketszer kell kattintani hogy atugorjunk a gombon.
 - **Gyökérok (melyik sor, melyik szabály sérül):**
+A 29. sorban a gomb egy anchor tagbe van csomagolva. Mivel mind az <a> es a <button> fokuszalhato elem, a bongeszo ket kulon Tab-megallot hoz letre.
 - **Javítás (commit link, előtte/utána kódrészlet):**
+
+Elotte: <a href="#"><button>Küldés</button></a>
+Utana: <button type="submit">Küldés</button>
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
+W3C validator, es billentyuzetes bejaras.
 - **Tanulság / érintett alapelv (pl. Szemantika előbb, stílus később; WCAG-kritérium):**
+Urlap bekuldesehez nincs szukseg <a> linkre, a <button> elem onmagaban elvegzi ezt a feladatot.
 
 ## 7. hiba
 - **Hiba leírása és reprodukálása (lépések, böngésző, segédtechnológia):**
