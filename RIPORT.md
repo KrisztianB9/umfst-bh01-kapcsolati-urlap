@@ -55,7 +55,7 @@ Reprodukalas: oldal megnyitasa es kepernyoolvasoval valo bejaras.
 - **Gyökérok (melyik sor, melyik szabály sérül):**
 Az urlapmezoknek (input,select,textarea) nincsen label cimke elemei. A fejleszto csak placeholder elemeket hasznalt.
 - **Javítás (commit link, előtte/utána kódrészlet):**
-
+  https://github.com/KrisztianB9/umfst-bh01-kapcsolati-urlap/commit/54a80159a6a83f93d6194134442610ccb84fc955
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
 Lighthouse Accessibilty audit, kepernyoolvasasos teszteles.
 - **Tanulság / érintett alapelv (pl. Szemantika előbb, stílus később; WCAG-kritérium):**
@@ -63,10 +63,18 @@ A placeholder soha nem helyettesiti a label-t.
 
 ## 5. hiba
 - **Hiba leírása és reprodukálása (lépések, böngésző, segédtechnológia):**
+Mobilon az email cim mezore kattintva a hagyomanyos billentyuzet jelenik meg, ahol nincs mar egybol @ szimbolum. Emellett az urlap bekuldheto olyan email cimmel, hogy "alma", ami nyilvanvaloan nem email cim.
+Reprodukalas: mobilon rakattintani a mezore, tesztadat beirasa.
 - **Gyökérok (melyik sor, melyik szabály sérül):**
+Az email cim bekeresere szolaglo <input> type-ja text-re van rakva, ami egy sima szoveges mezo.
 - **Javítás (commit link, előtte/utána kódrészlet):**
+
+Elotte: <input type="text" id="email" name="email" placeholder="E-mail cím" required>
+Utana: <input type="email" id="email" name="email" placeholder="E-mail cím" required>
 - **Hogyan tesztelted (W3C validátor, Lighthouse, Tab-bejárás, képernyőolvasó):**
+Mobilos bongeszo es az urlap kitoltese @ nelkul. Hibat dob vissza nelkule.
 - **Tanulság / érintett alapelv (pl. Szemantika előbb, stílus később; WCAG-kritérium):**
+A megfelelo szemantikus input tipus hasznalata drasztikusan noveli a mobilelmenyt, illetve ad egy alapveto biztonsagi reteget.
 
 ## 6. hiba
 - **Hiba leírása és reprodukálása (lépések, böngésző, segédtechnológia):**
